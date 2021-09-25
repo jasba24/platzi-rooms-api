@@ -1,0 +1,14 @@
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": ["prettier"],
+	"parser": "babel-eslint",
+	"rules": {
+		"indent": "off",
+		"semi": ["error", "never"],
+		"no-tabs": ["error", { "allowIndentationTabs": true }]
+	}
+}
