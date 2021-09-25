@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+	"name": "Miguel",
+	"password": "lamidupassword",
+  "email": "mdededel@midudev.com",
+  "registeredAt": 1504035908
+}

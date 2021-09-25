@@ -37,7 +37,10 @@ const rooms = [
 			} catch (error) {
 				console.log(error)
 			}
-			return h.response(saveRoom).type("application/json")
+			const response = h.response(saveRoom)
+			response.type("application/json")
+			response.statusCode = 201
+			return response
 		},
 	},
 	{
@@ -46,9 +49,10 @@ const rooms = [
 		handler: async (req, h) => {
 			const id = req.params.id
 			await Room.findByIdAndRemove(id)
-			return h
-				.response(`Room ID: ${id} eliminada exitósamente!`)
-				.type("application/json")
+			const response = h.response(`Room ID: ${id} eliminada exitósamente!`)
+			response.type("application/json")
+			response.statusCode = 204
+			return response
 		},
 	},
 	{
@@ -66,6 +70,5 @@ const rooms = [
 		},
 	},
 ]
-
 
 module.exports = rooms
