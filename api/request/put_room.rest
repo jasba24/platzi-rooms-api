@@ -1,0 +1,19 @@
+PUT http://localhost:3000/api/rooms/614f417d6922aa8a2a3985b5
+Content-Type: application/json
+
+{
+	"featured_image": "https://images.unsplash.com/photo-1504615755583-2916b52192a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80",
+			"title": "Private entry, bed/bath&room for your pooch!",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper placerat nunc, in accumsan neque eleifend sit amet. Vivamus vitae odio lorem. Phasellus viverra mauris ut lorem ultricies aliquam. Maecenas mollis sem non suscipit facilisis. Nunc quis finibus arcu, a fringilla dui. Praesent efficitur sapien ut porttitor venenatis. Etiam ac tincidunt libero. Donec a sapien nunc. Proin sapien ante, vestibulum id suscipit at, sodales in augue. Nam finibus sodales mattis. Donec vel venenatis ex. Morbi sed nisl libero. Nulla diam turpis, rutrum egestas erat eu, suscipit vestibulum nibh. Pellentesque nec tellus neque. Integer in turpis bibendum, fringilla nisi id, euismod justo.",
+			"publishedAt": 1504035908,
+			"type": "Entire Guest Suite",
+			"location": "Mexico City, Mexico",
+			"price": 23,
+			"meta": {
+				"guests": 4,
+				"bedrooms": 2,
+				"beds": 2,
+				"baths": 2,
+				"likes": 0
+	}
+}

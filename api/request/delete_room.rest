@@ -1,0 +1,1 @@
+DELETE  http://localhost:3000/api/rooms/614f3a1b0bc70c54013234b8
