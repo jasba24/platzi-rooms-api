@@ -6,11 +6,10 @@ const routes = require("./routes")
 
 const init = async () => {
 	const server = Hapi.server({
-		port: process.env.PORT || 3000,
-		host: "localhost",
+		port: process.env.PORT,
 		routes: {
-			cors: true
-		}
+			cors: true,
+		},
 	})
 
 	await server.register(routes)
